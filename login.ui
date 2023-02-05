@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>875</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(71, 151, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1170</width>
+      <height>855</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Login</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>15</y>
+        <width>1140</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>img/appointment_login.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LOGININFO">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>430</y>
+        <width>291</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgba(255, 0, 0, 150);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PASSWORD">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>510</y>
+        <width>291</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 0, 0, 100);
+color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 10px;
+border-bottom: 2px solid rgba(0,0,0,150)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LOGINBUTTON">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>590</y>
+        <width>291</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#LOGINBUTTON{
+	border-radius: 10px;
+	font: 87 10pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton#LOGINBUTTON:hover{
+	background-color: rgb(47, 85, 255);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>L o g i n</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Book Appointment</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>15</y>
+        <width>1140</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>img/background2.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BookAppointmentIcon1">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>80</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#BookAppointmentIcon1{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 100);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#BookAppointmentIcon1:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/1.png</normaloff>img/1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ConsultDoctorIcon1">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>250</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#ConsultDoctorIcon1{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#ConsultDoctorIcon1:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/2.png</normaloff>img/2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ReportsIcon1">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>420</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#ReportsIcon1{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#ReportsIcon1:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/3.png</normaloff>img/3.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LogoutIcon1">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>590</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#LogoutIcon1{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#LogoutIcon1:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/4.png</normaloff>img/4.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>100</y>
+        <width>561</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 87 32pt &quot;Segoe UI Black&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Book Appointment</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>240</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Enter Patient Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PatientName">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>270</y>
+        <width>580</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#PatientName{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit#PatientName:hover{
+	background-color: rgba(0, 0, 0, 120);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Enter the patient name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PatientCity">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>360</y>
+        <width>580</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#PatientCity{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit#PatientCity:hover{
+	background-color: rgba(0, 0, 0, 120);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Enter the patient city</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>330</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Enter Patient City</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PatientPhone">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>460</y>
+        <width>580</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#PatientPhone{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit#PatientPhone:hover{
+	background-color: rgba(0, 0, 0, 120);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Enter the patient phone</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>430</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Enter Patient Phone</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PatientAppointmentTime">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>560</y>
+        <width>580</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#PatientAppointmentTime{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit#PatientAppointmentTime:hover{
+	background-color: rgba(0, 0, 0, 120);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Enter the appointment time</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>530</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Enter Appointment Time</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="APPOINTMENTINFO">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>200</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BOOKAPPOINTMENT">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>630</y>
+        <width>580</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#BOOKAPPOINTMENT{
+	border-radius: 10px;
+	font: 87 10pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton#BOOKAPPOINTMENT:hover{
+	background-color: rgb(47, 85, 255);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>B o o k  A p p o i n t m e n t</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>240</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Appointment Id :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>240</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Edit Appointment</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>15</y>
+        <width>1140</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>img/background3.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BookAppointmentIcon2">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>80</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#BookAppointmentIcon2{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#BookAppointmentIcon2:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/1.png</normaloff>img/1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ConsultDoctorIcon2">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>250</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#ConsultDoctorIcon2{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 100);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#ConsultDoctorIcon2:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/2.png</normaloff>img/2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LogoutIcon2">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>590</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#LogoutIcon2{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#LogoutIcon2:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/4.png</normaloff>img/4.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ReportsIcon2">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>420</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#ReportsIcon2{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#ReportsIcon2:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/3.png</normaloff>img/3.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="APPOINTMENTINFO_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>200</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>330</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Edit Patient Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EditPatientAppointmentTime">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>560</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#EditPatientAppointmentTime{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit#EditPatientAppointmentTime:hover{
+	background-color: rgba(0, 0, 0, 120);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Enter the appointment time</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EditPatientName">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>360</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#EditPatientName{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit#EditPatientName:hover{
+	background-color: rgba(0, 0, 0, 120);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Edit the patient city</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="EDITAPPOINTMENT">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>630</y>
+        <width>281</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#EDITAPPOINTMENT{
+	border-radius: 10px;
+	font: 87 10pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton#EDITAPPOINTMENT:hover{
+	background-color: rgb(47, 85, 255);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>E d i t  A p p o i n t m e n t</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>530</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Edit Appointment Time</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EditPatientPhone">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>460</y>
+        <width>580</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#EditPatientPhone{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit#EditPatientPhone:hover{
+	background-color: rgba(0, 0, 0, 120);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Edit the patient phone</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>100</y>
+        <width>561</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 87 32pt &quot;Segoe UI Black&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Edit Appointment</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>240</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Select Appointment Id</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>430</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Edit Patient Phone</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="SelectAppointmentId">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>270</y>
+        <width>580</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox#SelectAppointmentId{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit#SelectAppointmentId:hover{
+	background-color: rgba(0, 0, 0, 120);
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EditPatientCity">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>360</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#EditPatientCity{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit#EditPatientCity:hover{
+	background-color: rgba(0, 0, 0, 120);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Edit the patient city</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>330</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Edit Patient City</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="SelectAppointmentStatus">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>560</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox#SelectAppointmentStatus{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit#SelectAppointmentStatus:hover{
+	background-color: rgba(0, 0, 0, 120);
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>530</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Edit Appointment Status</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="DELETEAPPOINTMENT">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>630</y>
+        <width>281</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#DELETEAPPOINTMENT{
+	border-radius: 10px;
+	font: 87 10pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton#DELETEAPPOINTMENT:hover{
+	background-color: rgb(47, 85, 255);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>D e l e t e  A p p o i n t m e n t</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Reports</string>
+     </attribute>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>15</y>
+        <width>1140</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>img/background3.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ConsultDoctorIcon3">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>250</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#ConsultDoctorIcon3{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#ConsultDoctorIcon3:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/2.png</normaloff>img/2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LogoutIcon3">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>590</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#LogoutIcon3{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#LogoutIcon3:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/4.png</normaloff>img/4.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BookAppointmentIcon3">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>80</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#BookAppointmentIcon3{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#BookAppointmentIcon3:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/1.png</normaloff>img/1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ReportsIcon3">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>420</y>
+        <width>155</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#ReportsIcon3{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 100);
+	border: 1px solid rgba(255,255,255,50);
+}
+
+QPushButton#ReportsIcon3:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgba(0, 0, 0, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/3.png</normaloff>img/3.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>100</y>
+        <width>561</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 87 32pt &quot;Segoe UI Black&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Reports</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEdit">
+      <property name="geometry">
+       <rect>
+        <x>919</x>
+        <y>201</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateEdit#dateEdit{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}</string>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>211</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Select Appointment Id</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="Reports">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>260</y>
+        <width>691</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget#Reports{
+	background-color: rgba(0, 0, 0, 100);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,150);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+}
+</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
