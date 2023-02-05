@@ -1,3 +1,8 @@
+"""
+Created on:         05-aug-2023
+@Author:            Ranjeet Kumar
+Module Name:        appointment.py
+"""
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
