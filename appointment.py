@@ -14,6 +14,11 @@ from datetime import date
 
 ui, _ = loadUiType("login.ui")
 
+"""
+Application main class defined as:
+MainApp
+## In this missing Virtual Environment (venv)
+"""
 class MainApp(QMainWindow, ui):
   def __init__(self):
     QMainWindow.__init__(self)
